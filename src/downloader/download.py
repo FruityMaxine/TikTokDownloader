@@ -676,6 +676,7 @@ class Downloader:
             total=content or None,
             completed=position,
         )
+        cache.parent.mkdir(parents=True, exist_ok=True)
         try:
             async with open(cache, "ab") as f:
                 async for chunk in response.aiter_bytes(self.chunk):
