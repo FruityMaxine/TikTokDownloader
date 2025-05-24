@@ -72,9 +72,9 @@ class Settings:
         "cookie": "",
         "cookie_tiktok": "",
         "dynamic_cover": False,
-        "original_cover": False,
-        "proxy": None,
-        "proxy_tiktok": None,
+        "static_cover": False,
+        "proxy": "",
+        "proxy_tiktok": "",
         "twc_tiktok": "",
         "download": True,
         "max_size": 0,
@@ -87,27 +87,24 @@ class Settings:
         "douyin_platform": True,
         "tiktok_platform": True,
         "browser_info": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/131.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
             "pc_libra_divert": "Windows",
             "browser_platform": "Win32",
             "browser_name": "Chrome",
-            "browser_version": "126.0.0.0",
+            "browser_version": "136.0.0.0",
             "engine_name": "Blink",
-            "engine_version": "126.0.0.0",
+            "engine_version": "136.0.0.0",
             "os_name": "Windows",
             "os_version": "10",
             "webid": "",
         },
         "browser_info_tiktok": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/131.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
             "app_language": "zh-Hans",
             "browser_language": "zh-SG",
             "browser_name": "Mozilla",
             "browser_platform": "Win32",
-            "browser_version": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                               "Chrome/131.0.0.0 Safari/537.36",
+            "browser_version": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
             "language": "zh-Hans",
             "os": "windows",
             "priority_region": "CN",
@@ -117,6 +114,28 @@ class Settings:
             "device_id": "",
         },
     }  # 默认配置
+    compatible = (
+        (
+            "default_mode",
+            "run_command",
+            "",
+        ),
+        (
+            "update_cookie",
+            "douyin_platform",
+            True,
+        ),
+        (
+            "update_cookie_tiktok",
+            "tiktok_platform",
+            True,
+        ),
+        (
+            "original_cover",
+            "static_cover",
+            False,
+        ),
+    )  # 兼容旧版本配置文件
 
     def __init__(self, root: "Path", console: "ColorfulConsole"):
         self.file = root.joinpath("./settings.json")  # 配置文件
@@ -155,13 +174,13 @@ class Settings:
         if not (miss := default_keys - data_keys):
             return data
         if (
-                self.console.input(
-                    _(
-                        "配置文件 settings.json 缺少 {missing_params} 参数，是否需要生成默认配置文件(YES/NO): "
-                    ).format(missing_params=", ".join(miss)),
+            self.console.input(
+                _(
+                    "配置文件 settings.json 缺少 {missing_params} 参数，是否需要生成默认配置文件(YES/NO): "
+                ).format(missing_params=", ".join(miss)),
                 style=ERROR,
-                ).upper()
-                == "YES"
+            ).upper()
+            == "YES"
         ):
             self.__create()
         self.console.warning(
@@ -183,41 +202,22 @@ class Settings:
         )
 
     def __compatible_with_old_settings(
-            self,
-            data: dict,
+        self,
+        data: dict,
     ) -> dict:
         """兼容旧版本配置文件"""
-        if "default_mode" in data:
-            self.console.info(
-                "配置文件 default_mode 参数已变更为 run_command 参数，请注意修改配置文件！"
-            )
-            data["run_command"] = data.get(
-                "run_command",
-                data.get(
-                    "default_mode",
-                    "",
-                ),
-            )  # TODO: 暂时兼容旧版本配置文件，未来将会移除
-        if "update_cookie" in data:
-            self.console.info(
-                "配置文件 update_cookie 参数已变更为 douyin_platform 参数，请注意修改配置文件！"
-            )
-            data["douyin_platform"] = data.get(
-                "douyin_platform",
-                data.get(
-                    "update_cookie",
-                    True,
-                ),
-            )  # TODO: 暂时兼容旧版本配置文件，未来将会移除
-        if "update_cookie_tiktok" in data:
-            self.console.info(
-                "配置文件 update_cookie_tiktok 参数已变更为 tiktok_platform 参数，请注意修改配置文件！"
-            )
-            data["tiktok_platform"] = data.get(
-                "tiktok_platform",
-                data.get(
-                    "update_cookie_tiktok",
-                    True,
-                ),
-            )  # TODO: 暂时兼容旧版本配置文件，未来将会移除
+        for old, new_, default in self.compatible:
+            if old in data:
+                self.console.info(
+                    _(
+                        "配置文件 {old} 参数已变更为 {new} 参数，请注意修改配置文件！"
+                    ).format(old=old, new=new_),
+                )
+                data[new_] = data.get(
+                    new_,
+                    data.get(
+                        old,
+                        default,
+                    ),
+                )
         return data

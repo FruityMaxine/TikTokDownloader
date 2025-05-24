@@ -3,19 +3,20 @@
 <h1>TikTokDownloader 项目文档</h1>
 <a href="https://trendshift.io/repositories/6222" target="_blank"><img src="https://trendshift.io/api/badge/repositories/6222" alt="JoeanAmier%2FTikTokDownloader | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 <br>
-<img alt="GitHub" src="https://img.shields.io/github/license/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ff6348">
-<img alt="GitHub forks" src="https://img.shields.io/github/forks/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ffa502">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ffee6f">
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/JoeanAmier/TikTokDownloader?style=for-the-badge&color=13c2c2">
+<img alt="GitHub" src="https://img.shields.io/github/license/JoeanAmier/TikTokDownloader?style=flat-square">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/JoeanAmier/TikTokDownloader?style=flat-square&color=55efc4">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JoeanAmier/TikTokDownloader?style=flat-square&color=fda7df">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/JoeanAmier/TikTokDownloader?style=flat-square&color=a29bfe">
 <br>
-<img alt="Static Badge" src="https://img.shields.io/badge/Python-3.12-3498db?style=for-the-badge&logo=python&labelColor=fffa65">
-<img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ff7675">
-<img src="https://img.shields.io/badge/Sourcery-enabled-884898?style=for-the-badge&color=e056fd" alt="">
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/JoeanAmier/TikTokDownloader/total?style=for-the-badge&color=52c41a">
+<img alt="Static Badge" src="https://img.shields.io/badge/Python-3.12-b8e994?style=flat-square&logo=python&labelColor=3dc1d3">
+<img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/JoeanAmier/TikTokDownloader?style=flat-square&color=48dbfb">
+<img src="https://img.shields.io/badge/Sourcery-enabled-884898?style=flat-square&color=1890ff" alt="">
+<img alt="Static Badge" src="https://img.shields.io/badge/Docker-badc58?style=flat-square&logo=docker">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/JoeanAmier/TikTokDownloader/total?style=flat-square&color=ffdd59">
 </div>
 <br>
 <p>🔥 <b>TikTok 发布/喜欢/合辑/直播/视频/图集/音乐；抖音发布/喜欢/收藏/收藏夹/视频/图集/实况/直播/音乐/合集/评论/账号/搜索/热榜数据采集工具：</b>完全开源，基于 HTTPX 模块实现的免费数据采集和文件下载工具；批量下载抖音账号发布、喜欢、收藏、收藏夹作品；批量下载 TikTok 账号发布、喜欢作品；下载抖音链接或 TikTok 链接作品；获取抖音直播推流地址；下载抖音直播视频；获取 TikTok 直播推流地址；下载 TikTok 直播视频；采集抖音作品评论数据；批量下载抖音合集作品；批量下载 TikTok 合辑作品；采集抖音账号详细数据；采集抖音用户 / 作品 / 直播搜索结果；采集抖音热榜数据。</p>
-<p>⭐ <b>文档对应项目版本：<code>5.5</code>；文档内容正在完善中，如有发现任何错误或描述模糊之处，请告知作者以便改进！</b></p>
+<p>⭐ <b>文档对应项目版本：<code>5.7 Beta</code>；文档内容正在完善中，如有发现任何错误或描述模糊之处，请告知作者以便改进！</b></p>
 <hr>
 <h1>快速入门</h1>
 <p>⭐ 本项目包含手动构建可执行文件的 GitHub Actions，使用者可以随时使用 GitHub Actions 将最新源码构建为可执行文件！</p>
@@ -38,17 +39,17 @@
 </li>
 <li>阅读 TikTokDownloader 的免责声明，根据提示输入内容</li>
 <li>将 Cookie 信息写入配置文件
-<ol><b>手动复制粘贴 Cookie（推荐）</b>
+<ol><b>手动复制粘贴 Cookie</b>
 <li>参考 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md">Cookie 提取教程</a>，复制所需 Cookie 至剪贴板</li>
 <li>选择 <code>复制粘贴写入 Cookie</code> 选项，按照提示将 Cookie 写入配置文件</li>
 </ol>
-<ol><b>从浏览器获取 Cookie（推荐）</b>
+<ol><b>从浏览器获取 Cookie</b>
 <li>选择 <code>从浏览器获取 Cookie</code> 选项，按照提示选择浏览器类型</li>
 </ol>
-<ol><b>扫码登录获取 Cookie（弃用）</b>
-<li>选择 <code>扫码登录获取 Cookie</code> 选项，程序会显示登录二维码图片，并使用默认应用打开图片</li>
-<li>使用抖音 APP 扫描二维码并登录账号</li>
-<li>按照提示操作，将 Cookie 写入配置文件</li>
+<ol><b><del>扫码登录获取 Cookie</del>（失效）</b>
+<li><del>选择 <code>扫码登录获取 Cookie</code> 选项，程序会显示登录二维码图片，并使用默认应用打开图片</del></li>
+<li><del>使用抖音 APP 扫描二维码并登录账号</del></li>
+<li><del>按照提示操作，将 Cookie 写入配置文件</del></li>
 </ol>
 </li>
 <li>返回程序界面，依次选择 <code>终端交互模式</code> -> <code>批量下载链接作品(抖音)</code> -> <code>手动输入待采集的作品链接</code></li>
@@ -61,8 +62,9 @@
 <ul>
 <li>方式一：使用 <code>Dockerfile</code> 文件构建镜像</li>
 <li>方式二：使用 <code>docker pull joeanamier/tiktok-downloader</code> 命令拉取镜像</li>
+<li>方式三：使用 <code>docker pull ghcr.io/joeanamier/tiktok-downloader</code> 命令拉取镜像</li>
 </ul>
-<li>创建容器：<code>docker run --name 容器名称(可选) -p 主机端口号:8000 -it joeanamier/tiktok-downloader</code></li>
+<li>创建容器：<code>docker run --name 容器名称(可选) -p 主机端口号:5555 -v tiktok_downloader_volume:/TikTokDownloader -it joeanamier/tiktok-downloader</code></li>
 <li>运行容器
 <ul>
 <li>启动容器：<code>docker start -i 容器名称/容器 ID</code></li>
@@ -72,81 +74,7 @@
 </ol>
 <p>Docker 容器无法直接访问宿主机的文件系统，部分功能不可用，例如：<code>从浏览器获取 Cookie</code>；其他功能如有异常请反馈！</p>
 <h1>Cookie 说明</h1>
-<p><a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md">点击查看 Cookie 获取教程</a>；无效或失效的 Cookie 会导致程序获取数据失败或者无法下载最高分辨率的视频文件！</p>
-<table>
-<thead>
-<tr>
-<th align="center">程序功能</th>
-<th align="center">是否需要登录</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">下载账号发布作品</td>
-<td align="center">⭕建议登录</td>
-</tr>
-<tr>
-<td align="center">下载账号喜欢作品</td>
-<td align="center">⭕建议登录</td>
-</tr>
-<tr>
-<td align="center">下载链接作品</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">获取直播推流地址 (抖音)</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">获取直播推流地址 (TikTok)</td>
-<td align="center">✔️需要登录</td>
-</tr>
-<tr>
-<td align="center">下载直播视频</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">获取作品评论数据</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">下载合集作品</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">获取账号数据</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">采集搜索结果</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">采集热榜数据</td>
-<td align="center">❌无需登录</td>
-</tr>
-<tr>
-<td align="center">下载收藏作品</td>
-<td align="center">✔️需要登录</td>
-</tr>
-<tr>
-<td align="center">下载收藏夹作品</td>
-<td align="center">✔️需要登录</td>
-</tr>
-<tr>
-<td align="center">获取收藏合集数据</td>
-<td align="center">✔️需要登录</td>
-</tr>
-<tr>
-<td align="center">获取收藏音乐数据</td>
-<td align="center">✔️需要登录</td>
-</tr>
-<tr>
-<td align="center">获取收藏短剧数据</td>
-<td align="center">✔️需要登录</td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md">点击查看 Cookie 获取教程</a>；无效或失效的 Cookie 会导致程序获取数据失败！</p>
 <ul>
 <li>Cookie 仅需在失效后重新写入配置文件，并非每次运行程序都要写入配置文件！</li>
 <li><p>Cookie 会影响下载的视频文件分辨率，如果无法下载最高分辨率的视频文件，请尝试更新 Cookie！</li>
@@ -182,13 +110,13 @@ https://www.douyin.com/note/123456789
 
 <h2>直播下载</h2>
 <p><code>获取直播推流地址</code> 功能需要调用 <code>ffmpeg</code> 下载直播文件；程序会优先调用系统环境的 <code>ffmpeg</code>，其次调用 <code>ffmpeg</code> 参数指定的 <code>ffmpeg</code>，如果 <code>ffmpeg</code> 不可用，程序将不支持直播下载！</p>
-<p>建议前往 <a href="https://ffmpeg.org/download.html">官方网站</a> 获取 <code>ffmpeg</code> 程序！</p>
+<p>建议前往 <a href="https://ffmpeg.org/download.html">官方网站</a> 或者 <a href="https://github.com/BtbN/FFmpeg-Builds">FFmpeg-Builds</a> 获取 <code>ffmpeg</code> 程序！</p>
 <p>项目开发时所用的 FFmpeg 版本信息如下，不同版本的 FFmpeg 可能会有差异；若功能异常，请向作者反馈！</p>
 <pre>
-ffmpeg version N-116650-g7897b0beed-20240815 Copyright (c) 2000-2024 the FFmpeg developers
-built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
+ffmpeg version n7.1.1-6-g48c0f071d4-20250405 Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
 </pre>
-<h2>功能简介</h2>
+<h2>功能汇总</h2>
 <table>
 <thead>
 <tr>
@@ -206,7 +134,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 </tr>
 <tr>
 <td align="center">获取直播推流地址</td>
-<td align="center">文件下载, 数据提取</td>
+<td align="center">文件下载, 数据采集</td>
 </tr>
 <tr>
 <td align="center">采集作品评论数据</td>
@@ -243,7 +171,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 </tbody></table>
 <h2>关闭平台功能</h2>
 <p>本项目支持抖音平台和 TikTok 平台的数据采集和文件下载功能，平台功能默认开启，如果不需要使用平台的任何功能，可以编辑配置文件关闭平台功能。</p>
-<p>本项目内置参数更新机制，程序会周期性更新抖音与 TikTok 请求的部分参数，以保持参数的有效性（或许没有效果？），该功能无法防止参数失效，参数失效后需要重新写入 Cookie；关闭平台功能后，对应平台的参数更新功能将会禁用！</p>
+<p><del>本项目内置参数更新机制，程序会周期性更新抖音与 TikTok 请求的部分参数，以保持参数的有效性（或许没有效果？），该功能无法防止参数失效，参数失效后需要重新写入 Cookie；关闭平台功能后，对应平台的参数更新功能将会禁用！</del></p>
 <h1>配置文件</h1>
 <p>配置文件：项目根目录下的 <code>settings.json</code> 文件，可以自定义设置程序部分运行参数。</p>
 <p>若无特殊需求，大部分配置参数无需修改，直接使用默认值即可。</p>
@@ -287,8 +215,8 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 </tr>
 <tr>
 <td align="center"><i>latest</i></td>
-<td align="center">str</td>
-<td align="center">作品最晚发布日期，格式：<code>2023/1/1</code>；<strong>属于 accounts_urls 子参数</strong></td>
+<td align="center">str | float | int</td>
+<td align="center">作品最晚发布日期，格式：<code>2023/1/1</code>、<code>整数</code>、<code>浮点数</code>；设置为数值代表基于当天的前 XX 天，<strong>属于 accounts_urls 子参数</strong></td>
 <td align="center">不限制</td>
 </tr>
 <tr>
@@ -405,7 +333,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <td align="center">false</td>
 </tr>
 <tr>
-<td align="center">original_cover</td>
+<td align="center">static_cover</td>
 <td align="center">bool</td>
 <td align="center">是否下载视频作品静态封面图</td>
 <td align="center">false</td>
@@ -563,13 +491,13 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
   "truncate": 32,
   "storage_format": "xlsx",
   "cookie": {
-    "passport_csrf_token": "demo",
-    "passport_csrf_token_default": "demo",
-    "odin_tt": "demo"
+    "key-1": "value-1",
+    "key-2": "value-2",
+    "key-3": "value-3"
   },
   "cookie_tiktok": "参数规则与 cookie 一致",
   "dynamic_cover": false,
-  "original_cover": false,
+  "static_cover": false,
   "proxy": "http://127.0.0.1:9999",
   "proxy_tiktok": "参数规则与 proxy 一致",
   "twc_tiktok": "",
@@ -677,6 +605,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <p>如果已经采集某账号的全部发布作品，建议设置 <code>earliest</code> 和 <code>latest</code> 参数以减少后续采集请求次数，提高程序运行效率；<code>accounts_urls_tiktok</code>参数规则一致。</p>
 <p>示例：将 <code>earliest</code> 参数设置为 <code>2023/12/1</code>，程序获取账号发布作品数据时，不会获取早于 <code>2023/12/1</code> 的作品数据。</p>
 <p>示例：将 <code>earliest</code> 参数设置为 <code>30</code>，<code>latest</code> 参数设置为 <code>2024/12/1</code>，程序获取账号发布作品数据时，仅获取 2024 年 12 月 1 日当天及之前 30 天内发布的作品数据。</p>
+<p>示例：将 <code>earliest</code> 参数设置为 <code>15</code>，<code>latest</code> 参数设置为 <code>5</code>，程序获取账号发布作品数据时，仅获取前 5 天 ~ 前 20 天之间发布的作品数据。</p>
 <h3>文件储存路径</h3>
 
 ```json
@@ -789,7 +718,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li>设置非法字符替换规则</li>
 <li>开启服务器模式局域网访问功能</li>
 <li>设置服务器模式主机及端口</li>
-<li>设置平台参数更新间隔</li>
+<li><del>设置平台参数更新间隔</del></li>
 <li>设置彩色交互提示颜色</li>
 <li>设置请求数据延时间隔</li>
 <li>设置自定义作品筛选规则</li>
@@ -806,7 +735,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <p>成功写入配置文件后，程序会提示当前 Cookie 登录状态！</p>
 <p>Windows 系统需要以管理员身份运行程序才能读取 Chromium、Chrome、Edge 浏览器 Cookie！</p>
 <h2><del>扫码登录获取 Cookie</del></h2>
-<p>程序自动获取抖音登录二维码，随后会在终端输出二维码，并使用系统默认图片浏览器打开二维码图片，使用者通过抖音 APP 扫码并登录账号，操作后关闭二维码图片窗口，程序会自动检查登录结果并将登录后的 Cookie 写入配置文件。</p>
+<p><del>程序自动获取抖音登录二维码，随后会在终端输出二维码，并使用系统默认图片浏览器打开二维码图片，使用者通过抖音 APP 扫码并登录账号，操作后关闭二维码图片窗口，程序会自动检查登录结果并将登录后的 Cookie 写入配置文件。</del></p>
 <p><b>注意：</b>扫码登录可能会导致抖音账号被风控，该功能仅限学习研究，未来可能禁用或移除该功能！</p>
 <h2>终端交互模式</h2>
 <p>功能最全面的模式，支持全部功能。</p>
@@ -822,7 +751,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li><code>https://www.douyin.com/user/账号ID</code></li>
 <li><code>https://www.douyin.com/user/账号ID?modal_id=作品ID</code></li>
 </ul>
-<p>如果需要大批量采集账号作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 函数。</p>
+<p>如果需要大批量采集账号作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 方法。</p>
 <p><b>下载账号喜欢作品时需要使用已登录的 Cookie，否则程序可能无法正常获取账号消息！</b></p>
 <p>如果当前账号昵称或账号标识不是有效的文件夹名称时，程序会自动替换为账号 ID。</p>
 <p>每个账号的作品会下载至 <code>root</code> 参数路径下的账号文件夹，账号文件夹格式为 <code>UID123456789_mark_类型</code> 或者 <code>UID123456789_账号昵称_类型</code></p>
@@ -858,7 +787,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li>程序询问是否下载直播时，输入直播清晰度或者对应序号即可下载，例如：下载最高清晰度输入 <code>FULL_HD1</code> 或者 <code>1</code> 均可。</li>
 <li><del>程序调用内置下载器下载的直播文件，视频时长会显示为直播总时长，实际视频内容从下载时间开始，靠后部分的片段无法播放。</del></li>
 <li>直播视频会下载至 <code>root</code> 参数路径下的 <code>Live</code> 文件夹。</li>
-<li>经测试，强行终止程序或 <code>ffmpeg</code> 并不会导致已下载文件丢失或损坏，但无法继续下载。</li>
+<li>按下 <code>Ctrl + C</code> 终止程序或 <code>ffmpeg</code> 并不会导致已下载文件丢失或损坏，但无法继续下载。</li>
 </ul>
 <h3>采集作品评论数据(抖音)</h3>
 <p><strong>评论回复采集功能暂不开放！</strong></p>
@@ -896,7 +825,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li><code>https://www.douyin.com/collection/合集ID</code></li>
 <li><code>https://www.douyin.com/channel/分区ID?modal_id=作品ID</code></li>
 </ul>
-<p>如果需要大批量采集合集作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 函数。</p>
+<p>如果需要大批量采集合集作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 方法。</p>
 <p>如果当前合集标题或合集标识不是有效的文件夹名称时，程序会自动替换为合集 ID。</p>
 <p>每个合集的作品会下载至 <code>root</code> 参数路径下的合集文件夹，合集文件夹格式为 <code>MIX123456789_mark_合集作品</code> 或者 <code>MIX123456789_合集标题_合集作品</code></p>
 <h3>采集账号详细数据(抖音)</h3>
@@ -1084,15 +1013,13 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <p>无需输入任何内容；采集 <code>抖音热榜</code>、<code>娱乐榜</code>、<code>社会榜</code>、<code>挑战榜</code> 数据并储存至文件；必须设置 <code>storage_format</code> 参数才能正常使用。</p>
 <p>储存名称格式：<code>热榜数据_采集时间_热榜名称</code></p>
 <h3>批量下载话题作品(抖音)</h3>
-<p>敬请期待！</p>
+<p>暂不支持！</p>
 <h3>批量下载收藏作品(抖音)</h3>
 <p>无需输入任何内容；需要在配置文件写入已登录的 Cookie，并在 <code>owner_url</code> 参数填入对应的账号主页链接和账号标识（可选参数）；目前仅支持采集当前 Cookie 对应账号的收藏作品。</p>
 <p>文件夹格式为 <code>UID123456789_mark_收藏作品</code> 或者 <code>UID123456789_账号昵称_收藏作品</code></p>
 <h3>批量下载收藏夹作品(抖音)</h3>
 <p>无需输入任何内容；需要在配置文件写入已登录的 Cookie，程序会自动获取当前 Cookie 账号的收藏夹数据并展示，根据程序提示输入收藏夹序号下载对应收藏夹作品文件，输入 <code>ALL</code> 下载全部收藏夹作品。</p>
 <p>文件夹格式为 <code>CID123456789_收藏夹名称_收藏作品</code></p>
-<h3>批量下载短剧作品(抖音)</h3>
-<p>敬请期待！</p>
 <h3>批量下载账号作品(TikTok)</h3>
 <ol>
 <li>使用 <code>settings.json</code> 的 <code>accounts_urls_tiktok</code> 参数中的账号链接。</li>
@@ -1104,7 +1031,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li><code>https://www.tiktok.com/@TikTok号</code></li>
 <li><code>https://www.tiktok.com/@TikTok号/video/作品ID</code></li>
 </ul>
-<p>如果需要大批量采集账号作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 函数。</p>
+<p>如果需要大批量采集账号作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 方法。</p>
 <p>如果当前账号昵称或账号标识不是有效的文件夹名称时，程序会自动替换为账号 ID。</p>
 <p>每个账号的作品会下载至 <code>root</code> 参数路径下的账号文件夹，账号文件夹格式为 <code>UID123456789_mark_类型</code> 或者 <code>UID123456789_账号昵称_类型</code></p>
 <h3>批量下载链接作品(TikTok)</h3>
@@ -1130,7 +1057,7 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li><code>https://www.tiktok.com/@TikTok号/playlist/合辑信息</code></li>
 <li><code>https://www.tiktok.com/@TikTok号/collection/合辑信息</code></li>
 </ul>
-<p>如果需要大批量采集合集作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 函数。</p>
+<p>如果需要大批量采集合集作品，建议启用 <code>src/custom/function.py</code> 文件的 <code>suspend</code> 方法。</p>
 <p>如果当前合集标题或合集标识不是有效的文件夹名称时，程序会自动替换为合集 ID。</p>
 <p>每个合集的作品会下载至 <code>root</code> 参数路径下的合集文件夹，合集文件夹格式为 <code>MIX123456789_mark_合集作品</code> 或者 <code>MIX123456789_合集标题_合集作品</code></p>
 <h3>获取直播推流地址(TikTok)</h3>
@@ -1140,322 +1067,54 @@ built with gcc 14.2.0 (crosstool-NG 1.26.0.106_ed12fa6)
 <li><code>https://vt.tiktok.com/分享码/</code></li>
 <li><code>https://www.tiktok.com/@TikTok号/live</code></li>
 </ul>
-<p>TikTok 平台直播视频下载功能尚未开发完成，请自行使用第三方工具下载！</p>
+<p>下载说明：</p>
+<ul>
+<li>程序会询问用户是否下载直播视频，支持同时下载多个直播视频。</li>
+<li>程序调用 <code>ffmpeg</code> 下载直播时，关闭 TikTokDownloader 不会影响直播下载。</li>
+<li><del>程序调用内置下载器下载直播时，需要保持 TikTokDownloader 运行直到直播结束。</del></li>
+<li>程序询问是否下载直播时，输入直播清晰度或者对应序号即可下载，例如：下载最高清晰度输入 <code>FULL_HD1</code> 或者 <code>1</code> 均可。</li>
+<li><del>程序调用内置下载器下载的直播文件，视频时长会显示为直播总时长，实际视频内容从下载时间开始，靠后部分的片段无法播放。</del></li>
+<li>直播视频会下载至 <code>root</code> 参数路径下的 <code>Live</code> 文件夹。</li>
+<li>按下 <code>Ctrl + C</code> 终止程序或 <code>ffmpeg</code> 并不会导致已下载文件丢失或损坏，但无法继续下载。</li>
+</ul>
+<h3>批量下载视频原画(TikTok)</h3>
+<p><strong>注意：本功能为实验性功能，依赖第三方 API 服务，可能不稳定或存在限制！</strong></p>
+<ol>
+<li>手动输入待采集的作品链接。</li>
+<li>输入文本文档路径，读取文件包含的作品链接。</li>
+</ol>
+<p>支持链接格式：</p>
+<ul>
+<li><code>https://vm.tiktok.com/分享码/</code></li>
+<li><code>https://www.tiktok.com/@TikTok号/video/作品ID</code></li>
+</ul>
+<p>作品会下载至 <code>root</code> 参数和 <code>folder_name</code> 参数拼接成的文件夹。</p>
 <h2>后台监测模式</h2>
 <p>敬请期待！</p>
 <h2>Web API 接口模式</h2>
-<p><b>项目代码已重构，该模式代码尚未更新，未来开发完成重新开放！</b></p>
-<p>启动服务器，提供 API 调用功能；支持局域网远程访问，可以部署至私有服务器或者公开服务器，远程部署建议设置参数验证。</p>
+<p>启动服务器，提供 API 调用功能；支持局域网远程访问，可以部署至私有服务器或者公开服务器，远程部署建议设置参数验证，防止恶意请求！</p>
 <p>默认禁用局域网访问，如需开启，请修改 <code>src/custom/static.py</code> 文件的 <code>SERVER_HOST</code> 变量。</p>
-<p>部分接口支持传入临时 <code>cookie</code> 参数，如果传入临时 <code>cookie</code> 参数，本次 API 请求会使用临时 <code>cookie</code> 向抖音服务器获取数据，如果没有传入 <code>cookie</code> 参数，程序会使用配置文件的 <code>cookie</code> 参数；需要注意临时 <code>cookie</code> 和配置文件 <code>cookie</code> 参数的有效性；程序不会储存临时 <code>cookie</code> 内容。</p>
-<p>目前支持调用 API 获取数据，暂不支持调用 API 下载文件！</p>
-<p><strong>API 接口通用说明：</strong></p>
-<ul>
-<li>请求类型：<code>POST</code></li>
-<li>请求格式：<code>JSON</code></li>
-<li>响应格式：<code>JSON</code></li>
-</ul>
-<p><b>代码示例：</b></p>
+<p><strong>启动该模式后，访问 <code>http://127.0.0.1:5555/docs</code> 或者 <code>http://127.0.0.1:5555/redoc</code> 可以查阅自动生成的文档！</strong></p>
+<h3>API 调用示例代码</h3>
+<pre>
+from httpx import post
+from rich import print
 
-```python
-import requests
 
-params = {
-    "url": "https://www.douyin.com/note/12345678910",
-    "source": True
+def demo():
+headers = {"token": ""}
+data = {
+"detail_id": "0123456789",
+"pages": 2,
 }
-response = requests.post("http://localhost:5000/detail/", json=params)
+api = "http://127.0.0.1:5555/douyin/comment"
+response = post(api, json=data, headers=headers)
 print(response.json())
-```
 
-<h3>配置文件修改接口</h3>
-<p>修改 <code>settings.json</code> 配置文件；无需发送全部参数，仅需发送想要修改的参数；参数格式要求与配置文件格式要求保持一致。</p>
-<p><b>请求接口：</b><code>/settings/</code></p>
-<p><b>请求参数(可选)</b></p>
-
-```json
-{
-  "root": "可选参数",
-  "folder_name": "可选参数",
-  "name_format": "可选参数",
-  "date_format": "可选参数",
-  "split": "可选参数",
-  "folder_mode": "可选参数",
-  "music": "可选参数",
-  "storage_format": "可选参数",
-  "cookie": "可选参数",
-  "dynamic_cover": "可选参数",
-  "original_cover": "可选参数",
-  "proxies": "可选参数",
-  "download": "可选参数",
-  "max_size": "可选参数",
-  "chunk": "可选参数",
-  "max_retry": "可选参数",
-  "max_pages": "可选参数",
-  "run_command": "可选参数",
-  "ffmpeg": "可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-<p>返回 <code>settings.json</code> 配置文件所有参数</p>
-<h3>账号作品数据接口</h3>
-<p>获取账号发布作品或者喜欢作品数据</p>
-<p><b>请求接口：</b><code>/account/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "账号主页链接，字符串，必需参数",
-  "tab": "发布作品或者喜欢作品，字符串，可选参数，默认值: post",
-  "earliest": "作品最早发布日期，字符串，可选参数",
-  "latest": "作品最晚发布日期，字符串，可选参数",
-  "pages": "账号喜欢作品数据最大请求次数，整数，可选参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "作品数据-1，JSON 格式",
-    "作品数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>链接作品数据接口</h3>
-<p>获取作品详细数据；<strong>支持 TikTok 平台。</strong></p>
-<p><b>请求接口：</b><code>/detail/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "作品链接，支持多作品，字符串，必需参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "作品数据-1，JSON 格式",
-    "作品数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>直播推流数据接口</h3>
-<p>获取直播推流数据</p>
-<p><b>请求接口：</b><code>/live/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "直播链接，支持多直播，字符串，必需参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "直播数据-1，JSON 格式",
-    "直播数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>作品评论数据接口</h3>
-<p>获取作品评论数据</p>
-<p><b>请求接口：</b><code>/comment/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "作品链接，字符串，必需参数",
-  "pages": "作品评论数据最大请求次数，整数，可选参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "评论数据-1，JSON 格式",
-    "评论数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>合集作品数据接口</h3>
-<p>获取合集作品数据</p>
-<p><b>请求接口：</b><code>/mix/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "属于合集的作品链接，字符串，必需参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "作品数据-1，JSON 格式",
-    "作品数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>账号详细数据接口</h3>
-<p>获取账号详细数据</p>
-<p><b>请求接口：</b><code>/user/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "url": "账号主页链接，支持多账号，字符串，必需参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "账号详细数据-1，JSON 格式",
-    "账号详细数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>搜索结果数据接口</h3>
-<p>获取抖音搜索结果数据</p>
-<p><b>请求接口：</b><code>/search/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "keyword": "关键词，字符串，必需参数",
-  "type": "搜索类型，字符串，可选参数",
-  "pages": "结果页数，字符串，可选参数",
-  "sort_type": "排序依据，字符串，可选参数",
-  "publish_time": "发布时间，字符串，可选参数",
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "cookie": "抖音 cookie，字符串，可选参数",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "data": [
-    "搜索结果数据-1，JSON 格式",
-    "搜索结果数据-2，JSON 格式",
-    "..."
-  ],
-  "message": "success"
-}
-```
-
-<h3>抖音热榜数据接口</h3>
-<p>获取抖音热榜数据</p>
-<p><b>请求接口：</b><code>/hot/</code></p>
-<p><b>请求参数</b></p>
-
-```json
-{
-  "source": "是否返回原始数据，布尔值，可选参数，默认值: false",
-  "token": "自定义参数"
-}
-```
-
-<p><b>响应参数</b></p>
-
-```json
-{
-  "time": "热榜采集时间",
-  "data": [
-    {
-      "抖音热榜": [
-        "热榜数据-1，JSON 格式",
-        "热榜数据-2，JSON 格式",
-        "..."
-      ]
-    },
-    {
-      "娱乐榜": [
-        "热榜数据-1，JSON 格式",
-        "热榜数据-2，JSON 格式",
-        "..."
-      ]
-    },
-    {
-      "社会榜": [
-        "热榜数据-1，JSON 格式",
-        "热榜数据-2，JSON 格式",
-        "..."
-      ]
-    },
-    {
-      "挑战榜": [
-        "热榜数据-1，JSON 格式",
-        "热榜数据-2，JSON 格式",
-        "..."
-      ]
-    }
-  ],
-  "message": "success"
-}
-```
-
+demo()
+</pre>
 <h2>Web UI 交互模式</h2>
 <p><b>项目代码已重构，该模式代码尚未更新，未来开发完成重新开放！</b></p>
-<p>提供浏览器可视化交互界面，支持 <code>批量下载链接作品</code> 和 <code>获取直播推流地址</code> 功能，支持局域网远程访问，可以部署至私有服务器，不可直接部署至公开服务器。</p>
-<h2>服务器部署模式</h2>
-<p><b>项目代码已重构，该模式代码尚未更新，未来开发完成重新开放！</b></p>
-<p>提供浏览器可视化交互界面，支持 <code>批量下载链接作品</code> 功能，默认启用局域网访问，用于部署至公开服务器，为网站访客提供作品下载服务，建议设置参数验证。</p>
-<p>支持远程修改 <code>settings.json</code> 配置文件，请参考 <code>配置文件修改接口</code></p>
 <h2>启用/禁用作品下载记录</h2>
 <ul>
 <li>启用该功能：程序会记录下载成功的作品 ID，如果对作品文件进行移动、重命名或者删除操作，程序不会重复下载该作品，如果想要重新下载该作品，需要删除记录数据中对应的作品 ID。</li>
@@ -1509,46 +1168,6 @@ print(response.json())
 <p><strong>数据路径: <code>./TikTokDownloader.db</code> 的 <code>mapping_data</code> 数据表；</strong>
 用于记录账号 / 合集标识和账号昵称，当账号 / 合集标识或账号昵称发生变化时，程序会对相应的文件夹和文件进行重命名更新处理。</p>
 <p><strong>缓存数据仅供程序读取和修改，不建议手动编辑数据内容。</strong></p>
-<h1>服务器部署模式二次开发</h1>
-<p><b>该模式代码尚未更新，未来开发完成将会更新文档！</b></p>
-<h2>API 文档</h2>
-<p>请求URL：<code>/single/</code></p>
-<p>请求类型：<code>POST</code></p>
-<p>请求格式：<code>JSON</code></p>
-<p>请求参数：</p>
-
-```json
-{
-  "url": "抖音作品链接或 TikTok 作品链接",
-  "token": "自定义参数"
-}
-```
-
-<p><strong>后端会自动处理 <code>url</code> 参数中的作品链接，可以不在前端对 <code>url</code> 参数进行额外处理。</strong></p>
-<p>支持链接：</p>
-<ul>
-<li><code>https://v.douyin.com/分享码/</code></li>
-<li><code>https://vm.tiktok.com/分享码/</code></li>
-<li><code>https://www.douyin.com/note/作品ID</code></li>
-<li><code>https://www.douyin.com/video/作品ID</code></li>
-<li><code>https://www.douyin.com/user/账号ID?modal_id=作品ID</code></li>
-<li><code>https://www.tiktok.com/@账号昵称/video/作品ID</code></li>
-</ul>
-<p>响应格式：<code>JSON</code></p>
-<p>响应参数：</p>
-
-```json
-{
-  "text": "解析结果提示, 字符串",
-  "author": "作者昵称, 字符串; 失败时返回 null",
-  "describe": "作品描述, 字符串; 失败时返回 null",
-  "download": "作品下载地址, 视频返回字符串, 图集返回由下载地址成的数组; 失败时返回 false",
-  "music": "原声下载地址, 字符串, 失败时返回 false",
-  "origin": "静态封面图地址, 字符串; 失败时返回 false",
-  "dynamic": "动态封面图地址, 字符串; 失败时返回 false",
-  "preview": "作品预览图地址, 字符串, 视频返回静态封面图, 图集返回首张图片; 失败时返回空白预览图地址"
-}
-```
 
 # 构建可执行文件指南
 
@@ -1652,18 +1271,28 @@ A: 由于权限限制，您无法直接触发主仓库的 Actions。请通过 Fo
 <p><code>Set-Cookie</code> 的内容格式为：<code>ttwid=XXX; Path=/; Domain=tiktok.com; Max-Age=31536000; HttpOnly; Secure; SameSite=None</code>，复制时只需要复制 <code>ttwid=XXX</code> 部分，而不是复制全部内容！</p>
 <h2>采集数据而不下载文件</h2>
 <p>将配置文件的 <code>download</code> 参数设置为 <code>false</code>，并设置 <code>storage_format</code> 参数，程序将不会下载任何文件，仅采集数据。</p>
+<h2>请求超时：timed out</h2>
+<p>网络异常；如果您的网络需要使用代理才能访问 TikTok，请在配置文件设置 <code>proxy</code> 参数！</p>
+<h2>self 获取账号信息失败</h2>
+<p>请把配置文件的 <code>owner_url</code> 参数修改为实际的抖音主页链接，获取方式请查阅 <a href="https://github.com/JoeanAmier/TikTokDownloader/issues/416">issue</a></p>
 <h1>免责声明</h1>
-<ul>
+<ol>
 <li>使用者对本项目的使用由使用者自行决定，并自行承担风险。作者对使用者使用本项目所产生的任何损失、责任、或风险概不负责。</li>
-<li>本项目的作者提供的代码和功能是基于现有知识和技术的开发成果。作者尽力确保代码的正确性和安全性，但不保证代码完全没有错误或缺陷。</li>
-<li>使用者在使用本项目时必须严格遵守 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/license">GNU
+<li>本项目的作者提供的代码和功能是基于现有知识和技术的开发成果。作者按现有技术水平努力确保代码的正确性和安全性，但不保证代码完全没有错误或缺陷。</li>
+<li>本项目依赖的所有第三方库、插件或服务各自遵循其原始开源或商业许可，使用者需自行查阅并遵守相应协议，作者不对第三方组件的稳定性、安全性及合规性承担任何责任。</li>
+<li>使用者在使用本项目时必须严格遵守 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/LICENSE">GNU
     General Public License v3.0</a> 的要求，并在适当的地方注明使用了 <a
-        href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/license">GNU General Public License
+        href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/LICENSE">GNU General Public License
     v3.0</a> 的代码。
 </li>
-<li>使用者在任何情况下均不得将本项目的作者、贡献者或其他相关方与使用者的使用行为联系起来，或要求其对使用者使用本项目所产生的任何损失或损害负责。</li>
 <li>使用者在使用本项目的代码和功能时，必须自行研究相关法律法规，并确保其使用行为合法合规。任何因违反法律法规而导致的法律责任和风险，均由使用者自行承担。</li>
+<li>使用者不得使用本工具从事任何侵犯知识产权的行为，包括但不限于未经授权下载、传播受版权保护的内容，开发者不参与、不支持、不认可任何非法内容的获取或分发。</li>
+<li>本项目不对使用者涉及的数据收集、存储、传输等处理活动的合规性承担责任。使用者应自行遵守相关法律法规，确保处理行为合法正当；因违规操作导致的法律责任由使用者自行承担。</li>
+<li>使用者在任何情况下均不得将本项目的作者、贡献者或其他相关方与使用者的使用行为联系起来，或要求其对使用者使用本项目所产生的任何损失或损害负责。</li>
 <li>本项目的作者不会提供 TikTokDownloader 项目的付费版本，也不会提供与 TikTokDownloader 项目相关的任何商业服务。</li>
 <li>基于本项目进行的任何二次开发、修改或编译的程序与原创作者无关，原创作者不承担与二次开发行为或其结果相关的任何责任，使用者应自行对因二次开发可能带来的各种情况负全部责任。</li>
-</ul>
+<li>本项目不授予使用者任何专利许可；若使用本项目导致专利纠纷或侵权，使用者自行承担全部风险和责任。未经作者或权利人书面授权，不得使用本项目进行任何商业宣传、推广或再授权。</li>
+<li>作者保留随时终止向任何违反本声明的使用者提供服务的权利，并可能要求其销毁已获取的代码及衍生作品。</li>
+<li>作者保留在不另行通知的情况下更新本声明的权利，使用者持续使用即视为接受修订后的条款。</li>
+</ol>
 <b>在使用本项目的代码和功能之前，请您认真考虑并接受以上免责声明。如果您对上述声明有任何疑问或不同意，请不要使用本项目的代码和功能。如果您使用了本项目的代码和功能，则视为您已完全理解并接受上述免责声明，并自愿承担使用本项目的一切风险和后果。</b>

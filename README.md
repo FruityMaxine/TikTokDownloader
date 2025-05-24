@@ -4,15 +4,16 @@
 <p>简体中文 | <a href="README_EN.md">English</a></p>
 <a href="https://trendshift.io/repositories/6222" target="_blank"><img src="https://trendshift.io/api/badge/repositories/6222" alt="JoeanAmier%2FTikTokDownloader | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 <br>
-<img alt="GitHub" src="https://img.shields.io/github/license/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ff6348">
-<img alt="GitHub forks" src="https://img.shields.io/github/forks/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ffa502">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ffee6f">
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/JoeanAmier/TikTokDownloader?style=for-the-badge&color=13c2c2">
+<img alt="GitHub" src="https://img.shields.io/github/license/JoeanAmier/TikTokDownloader?style=flat-square">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/JoeanAmier/TikTokDownloader?style=flat-square&color=55efc4">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JoeanAmier/TikTokDownloader?style=flat-square&color=fda7df">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/JoeanAmier/TikTokDownloader?style=flat-square&color=a29bfe">
 <br>
-<img alt="Static Badge" src="https://img.shields.io/badge/Python-3.12-3498db?style=for-the-badge&logo=python&labelColor=fffa65">
-<img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/JoeanAmier/TikTokDownloader?style=for-the-badge&color=ff7675">
-<img src="https://img.shields.io/badge/Sourcery-enabled-884898?style=for-the-badge&color=e056fd" alt="">
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/JoeanAmier/TikTokDownloader/total?style=for-the-badge&color=52c41a">
+<img alt="Static Badge" src="https://img.shields.io/badge/Python-3.12-b8e994?style=flat-square&logo=python&labelColor=3dc1d3">
+<img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/JoeanAmier/TikTokDownloader?style=flat-square&color=48dbfb">
+<img src="https://img.shields.io/badge/Sourcery-enabled-884898?style=flat-square&color=1890ff" alt="">
+<img alt="Static Badge" src="https://img.shields.io/badge/Docker-badc58?style=flat-square&logo=docker">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/JoeanAmier/TikTokDownloader/total?style=flat-square&color=ffdd59">
 </div>
 <br>
 <p>🔥 <b>TikTok 发布/喜欢/合辑/直播/视频/图集/音乐；抖音发布/喜欢/收藏/收藏夹/视频/图集/实况/直播/音乐/合集/评论/账号/搜索/热榜数据采集工具：</b>完全开源，基于 HTTPX 模块实现的免费数据采集和文件下载工具；批量下载抖音账号发布、喜欢、收藏、收藏夹作品；批量下载 TikTok 账号发布、喜欢作品；下载抖音链接或 TikTok 链接作品；获取抖音直播推流地址；下载抖音直播视频；获取 TikTok 直播推流地址；下载 TikTok 直播视频；采集抖音作品评论数据；批量下载抖音合集作品；批量下载 TikTok 合辑作品；采集抖音账号详细数据；采集抖音用户 / 作品 / 直播搜索结果；采集抖音热榜数据。</p>
@@ -24,6 +25,7 @@
 * ✅ 下载抖音无水印视频/图集
 * ✅ 下载抖音无水印实况/动图
 * ✅ 下载最高画质视频文件
+* ✅ 下载 TikTok 视频原画
 * ✅ 下载 TikTok 无水印视频/图集
 * ✅ 下载抖音账号发布/喜欢/收藏/收藏夹作品
 * ✅ 下载 TikTok 账号发布/喜欢作品
@@ -67,27 +69,54 @@
 
 # 💻 程序截图
 
-**终端交互模式：**
+## 终端交互模式
 
 <p><b>🎥 点击图片观看演示视频，建议通过配置文件管理账号，更多介绍请查阅 <a href="https://github.com/JoeanAmier/TikTokDownloader/wiki/Documentation">文档</a></b></p>
 
-[![终端模式截图](docs/终端交互模式截图CN1.png)](https://www.bilibili.com/video/BV1RAcHe5EpF/)
+[![终端模式截图](docs/终端交互模式截图CN1.png)](https://www.bilibili.com/video/BV18tVDzVEK7/)
 *****
-[![终端模式截图](docs/终端交互模式截图CN2.png)](https://www.bilibili.com/video/BV1RAcHe5EpF/)
+[![终端模式截图](docs/终端交互模式截图CN2.png)](https://www.bilibili.com/video/BV18tVDzVEK7/)
 *****
-[![终端模式截图](docs/终端交互模式截图CN3.png)](https://www.bilibili.com/video/BV1RAcHe5EpF/)
-<br><br>
-**Web UI 交互模式：**
-<br><br>
+[![终端模式截图](docs/终端交互模式截图CN3.png)](https://www.bilibili.com/video/BV18tVDzVEK7/)
+
+## Web UI 交互模式
+
+> **项目代码已重构，该模式代码尚未更新，未来开发完成重新开放！**
+
 ![WebUI模式截图](docs/WebUI模式截图1.png)
 *****
 ![WebUI模式截图](docs/WebUI模式截图2.png)
 *****
 ![WebUI模式截图](docs/WebUI模式截图3.png)
-<br><br>
-**Web API 接口模式：**
-<br><br>
-![WebAPI模式截图](docs/WebAPI模式截图.png)
+
+## Web API 接口模式
+
+![WebAPI模式截图](docs/WebAPI模式截图CN1.png)
+*****
+![WebAPI模式截图](docs/WebAPI模式截图CN2.png)
+
+> **启动该模式后，访问 `http://127.0.0.1:5555/docs` 或者 `http://127.0.0.1:5555/redoc` 可以查阅自动生成的文档！**
+
+### API 调用示例代码
+
+```python
+from httpx import post
+from rich import print
+
+
+def demo():
+    headers = {"token": ""}
+    data = {
+        "detail_id": "0123456789",
+        "pages": 2,
+    }
+    api = "http://127.0.0.1:5555/douyin/comment"
+    response = post(api, json=data, headers=headers)
+    print(response.json())
+
+
+demo()
+```
 
 # 📈 项目状态
 
@@ -100,8 +129,8 @@
 
 ## 快速入门
 
-<p>⭐ Mac OS、Windows 10 及以上用户可前往 <a href="https://github.com/JoeanAmier/TikTokDownloader/releases/latest">Releases</a> 下载已编译的程序，开箱即用！</p>
-<p>⭐ 本项目包含手动构建可执行文件的 GitHub Actions，使用者可以随时使用 GitHub Actions 将最新源码构建为可执行文件！</p>
+<p>⭐ Mac OS、Windows 10 及以上用户可前往 <a href="https://github.com/JoeanAmier/TikTokDownloader/releases/latest">Releases</a> 或者 <a href="https://github.com/JoeanAmier/TikTokDownloader/actions">Actions</a> 下载已编译的程序，开箱即用！</p>
+<p>⭐ 本项目包含自动构建可执行文件的 GitHub Actions，使用者可以随时使用 GitHub Actions 将最新源码构建为可执行文件！</p>
 <p><strong>注意：Mac OS 平台可执行文件 <code>main</code> 可能需要从终端命令行启动；受设备限制，Mac OS 平台可执行文件尚未经过测试，无法保证可用性！</strong></p>
 <hr>
 <ol>
@@ -123,17 +152,17 @@
 </li>
 <li>阅读 TikTokDownloader 的免责声明，根据提示输入内容</li>
 <li>将 Cookie 信息写入配置文件
-<ol><b>手动复制粘贴 Cookie（推荐）</b>
+<ol><b>手动复制粘贴 Cookie</b>
 <li>参考 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md">Cookie 提取教程</a>，复制所需 Cookie 至剪贴板</li>
 <li>选择 <code>复制粘贴写入 Cookie</code> 选项，按照提示将 Cookie 写入配置文件</li>
 </ol>
-<ol><b>从浏览器获取 Cookie（推荐）</b>
+<ol><b>从浏览器获取 Cookie</b>
 <li>选择 <code>从浏览器获取 Cookie</code> 选项，按照提示选择浏览器类型</li>
 </ol>
-<ol><b>扫码登录获取 Cookie（弃用）</b>
-<li>选择 <code>扫码登录获取 Cookie</code> 选项，程序会显示登录二维码图片，并使用默认应用打开图片</li>
-<li>使用抖音 APP 扫描二维码并登录账号</li>
-<li>按照提示操作，将 Cookie 写入配置文件</li>
+<ol><b><del>扫码登录获取 Cookie</del>（失效）</b>
+<li><del>选择 <code>扫码登录获取 Cookie</code> 选项，程序会显示登录二维码图片，并使用默认应用打开图片</del></li>
+<li><del>使用抖音 APP 扫描二维码并登录账号</del></li>
+<li><del>按照提示操作，将 Cookie 写入配置文件</del></li>
 </ol>
 </li>
 <li>返回程序界面，依次选择 <code>终端交互模式</code> -> <code>批量下载链接作品(通用)</code> -> <code>手动输入待采集的作品链接</code></li>
@@ -149,8 +178,9 @@
 <ul>
 <li>方式一：使用 <code>Dockerfile</code> 文件构建镜像</li>
 <li>方式二：使用 <code>docker pull joeanamier/tiktok-downloader</code> 命令拉取镜像</li>
+<li>方式三：使用 <code>docker pull ghcr.io/joeanamier/tiktok-downloader</code> 命令拉取镜像</li>
 </ul>
-<li>创建容器：<code>docker run --name 容器名称(可选) -p 主机端口号:8000 -it joeanamier/tiktok-downloader</code></li>
+<li>创建容器：<code>docker run --name 容器名称(可选) -p 主机端口号:5555 -v tiktok_downloader_volume:/TikTokDownloader -it joeanamier/tiktok-downloader</code></li>
 <li>运行容器
 <ul>
 <li>启动容器：<code>docker start -i 容器名称/容器 ID</code></li>
@@ -165,25 +195,6 @@
 ## 关于 Cookie
 
 [点击查看 Cookie 获取教程](https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md)
-
-|        程序功能         | 是否需要登录 |
-|:-------------------:|:------:|
-|      下载账号发布作品       | ⭕建议登录  |
-|      下载账号喜欢作品       | ⭕建议登录  |
-|       下载链接作品        | ❌无需登录  |
-|   获取直播推流地址 \(抖音\)   | ❌无需登录  |
-| 获取直播推流地址 \(TikTok\) | ✔️需要登录 |
-|       下载直播视频        | ❌无需登录  |
-|      获取作品评论数据       | ❌无需登录  |
-|       下载合集作品        | ❌无需登录  |
-|       获取账号数据        | ❌无需登录  |
-|       采集搜索结果        | ❌无需登录  |
-|       采集热榜数据        | ❌无需登录  |
-|       下载收藏作品        | ✔️需要登录 |
-|       下载收藏夹作品       | ✔️需要登录 |
-|      获取收藏合集数据       | ✔️需要登录 |
-|      获取收藏音乐数据       | ✔️需要登录 |
-|      获取收藏短剧数据       | ✔️需要登录 |
 
 > * Cookie 仅需在失效后重新写入配置文件，并非每次运行程序都要写入配置文件！
 >
@@ -203,12 +214,12 @@
 <li>程序下载文件时会先将文件下载至临时文件夹，下载完成后再移动至储存文件夹；程序运行结束时会清空临时文件夹</li>
 <li><code>批量下载收藏作品模式</code> 目前仅支持下载当前已登录 Cookie 对应账号的收藏作品，暂不支持多账号</li>
 <li>如果想要程序使用代理请求数据，必须在 <code>settings.json</code> 设置 <code>proxy</code> 参数，否则程序不会使用代理</li>
-<li>退出程序时，请以正常方式结束运行或者按下 Ctrl + C 结束运行，不要直接点击终端窗口的关闭按钮结束运行，否则会导致数据丢失</li>
 <li>如果您的计算机没有合适的程序编辑 JSON 文件，建议使用 <a href="https://try8.cn/tool/format/json">JSON 在线工具</a> 编辑配置文件内容</li>
 <li>当程序请求用户输入内容或链接时，请注意避免输入的内容或链接包含换行符，这可能会导致预期之外的问题</li>
 <li>本项目不会支持付费作品下载，请勿反馈任何关于付费作品下载的问题</li>
 <li>Windows 系统需要以管理员身份运行程序才能读取 Chromium、Chrome、Edge 浏览器 Cookie</li>
 <li>本项目并未针对程序多开的情况进行优化，如需程序多开，请复制整个项目的文件夹，避免出现预期之外的问题</li>
+<li>程序运行过程中，如需终止程序或 <code>ffmpeg</code>，请按下 <code>Ctrl + C</code> 终止运行，不要直接点击终端窗口的关闭按钮</li>
 </ul>
 <hr>
 
@@ -246,7 +257,7 @@
 #### 3. 手动触发打包流程
 
 1. 在您 Fork 的仓库中，点击顶部的 **Actions** 选项卡
-2. 找到名为 **手动构建可执行文件** 的工作流
+2. 找到名为 **构建可执行文件** 的工作流
 3. 点击右侧的 **Run workflow** 按钮：
     - 选择 **master** 或者 **develop** 分支
     - 点击 **Run workflow**
@@ -302,19 +313,25 @@ A: 由于权限限制，您无法直接触发主仓库的 Actions。请通过 Fo
 
 # ⚠️ 免责声明
 
-<ul>
+<ol>
 <li>使用者对本项目的使用由使用者自行决定，并自行承担风险。作者对使用者使用本项目所产生的任何损失、责任、或风险概不负责。</li>
-<li>本项目的作者提供的代码和功能是基于现有知识和技术的开发成果。作者尽力确保代码的正确性和安全性，但不保证代码完全没有错误或缺陷。</li>
-<li>使用者在使用本项目时必须严格遵守 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/license">GNU
+<li>本项目的作者提供的代码和功能是基于现有知识和技术的开发成果。作者按现有技术水平努力确保代码的正确性和安全性，但不保证代码完全没有错误或缺陷。</li>
+<li>本项目依赖的所有第三方库、插件或服务各自遵循其原始开源或商业许可，使用者需自行查阅并遵守相应协议，作者不对第三方组件的稳定性、安全性及合规性承担任何责任。</li>
+<li>使用者在使用本项目时必须严格遵守 <a href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/LICENSE">GNU
     General Public License v3.0</a> 的要求，并在适当的地方注明使用了 <a
-        href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/license">GNU General Public License
+        href="https://github.com/JoeanAmier/TikTokDownloader/blob/master/LICENSE">GNU General Public License
     v3.0</a> 的代码。
 </li>
-<li>使用者在任何情况下均不得将本项目的作者、贡献者或其他相关方与使用者的使用行为联系起来，或要求其对使用者使用本项目所产生的任何损失或损害负责。</li>
 <li>使用者在使用本项目的代码和功能时，必须自行研究相关法律法规，并确保其使用行为合法合规。任何因违反法律法规而导致的法律责任和风险，均由使用者自行承担。</li>
+<li>使用者不得使用本工具从事任何侵犯知识产权的行为，包括但不限于未经授权下载、传播受版权保护的内容，开发者不参与、不支持、不认可任何非法内容的获取或分发。</li>
+<li>本项目不对使用者涉及的数据收集、存储、传输等处理活动的合规性承担责任。使用者应自行遵守相关法律法规，确保处理行为合法正当；因违规操作导致的法律责任由使用者自行承担。</li>
+<li>使用者在任何情况下均不得将本项目的作者、贡献者或其他相关方与使用者的使用行为联系起来，或要求其对使用者使用本项目所产生的任何损失或损害负责。</li>
 <li>本项目的作者不会提供 TikTokDownloader 项目的付费版本，也不会提供与 TikTokDownloader 项目相关的任何商业服务。</li>
 <li>基于本项目进行的任何二次开发、修改或编译的程序与原创作者无关，原创作者不承担与二次开发行为或其结果相关的任何责任，使用者应自行对因二次开发可能带来的各种情况负全部责任。</li>
-</ul>
+<li>本项目不授予使用者任何专利许可；若使用本项目导致专利纠纷或侵权，使用者自行承担全部风险和责任。未经作者或权利人书面授权，不得使用本项目进行任何商业宣传、推广或再授权。</li>
+<li>作者保留随时终止向任何违反本声明的使用者提供服务的权利，并可能要求其销毁已获取的代码及衍生作品。</li>
+<li>作者保留在不另行通知的情况下更新本声明的权利，使用者持续使用即视为接受修订后的条款。</li>
+</ol>
 <b>在使用本项目的代码和功能之前，请您认真考虑并接受以上免责声明。如果您对上述声明有任何疑问或不同意，请不要使用本项目的代码和功能。如果您使用了本项目的代码和功能，则视为您已完全理解并接受上述免责声明，并自愿承担使用本项目的一切风险和后果。</b>
 <h1>🌟 贡献指南</h1>
 <p><strong>欢迎对本项目做出贡献！为了保持代码库的整洁、高效和易于维护，请仔细阅读以下指南，以确保您的贡献能够顺利被接受和整合。</strong></p>
@@ -322,7 +339,7 @@ A: 由于权限限制，您无法直接触发主仓库的 Actions。请通过 Fo
 <li>在开始开发前，请从 <code>develop</code> 分支拉取最新的代码，以此为基础进行修改；这有助于避免合并冲突并保证您的改动基于最新的项目状态。</li>
 <li>如果您的更改涉及多个不相关的功能或问题，请将它们分成多个独立的提交或拉取请求。</li>
 <li>每个拉取请求应尽可能专注于单一功能或修复，以便于代码审查和测试。</li>
-<li>遵循现有的代码风格；请确保您的代码与项目中已有的代码风格保持一致。</li>
+<li>遵循现有的代码风格；请确保您的代码与项目中已有的代码风格保持一致；建议使用 Ruff 工具保持代码格式规范。</li>
 <li>编写可读性强的代码；添加适当的注释帮助他人理解您的意图。</li>
 <li>每个提交都应该包含一个清晰、简洁的提交信息，以描述所做的更改。提交信息应遵循以下格式：<code>&lt;类型&gt;: &lt;简短描述&gt;</code></li>
 <li>当您准备提交拉取请求时，请优先将它们提交到 <code>develop</code> 分支；这是为了给维护者一个缓冲区，在最终合并到 <code>master</code>
@@ -345,9 +362,13 @@ A: 由于权限限制，您无法直接触发主仓库的 Actions。请通过 Fo
 </ul>
 <p>✨ <b>作者的其他开源项目：</b></p>
 <ul>
-<li><b>XHS-Downloader（小红书）</b>：<a href="https://github.com/JoeanAmier/XHS-Downloader">https://github.com/JoeanAmier/XHS-Downloader</a></li>
-<li><b>KS-Downloader（快手）</b>：<a href="https://github.com/JoeanAmier/KS-Downloader">https://github.com/JoeanAmier/KS-Downloader</a></li>
+<li><b>XHS-Downloader（小红书、XiaoHongShu、RedNote）</b>：<a href="https://github.com/JoeanAmier/XHS-Downloader">https://github.com/JoeanAmier/XHS-Downloader</a></li>
+<li><b>KS-Downloader（快手、KuaiShou）</b>：<a href="https://github.com/JoeanAmier/KS-Downloader">https://github.com/JoeanAmier/KS-Downloader</a></li>
 </ul>
+<h1>⭐ Star 趋势</h1>
+<p>
+<img alt="Star History Chart" src="https://api.star-history.com/svg?repos=JoeanAmier/TikTokDownloader&amp;type=Timeline"/>
+</p>
 
 # ♥️ 支持项目
 
@@ -410,3 +431,4 @@ A: 由于权限限制，您无法直接触发主仓库的 Actions。请通过 Fo
 * https://github.com/lxml/lxml
 * https://ffmpeg.org/ffmpeg-all.html
 * https://html5up.net/hyperspace
+* https://www.tikwm.com/

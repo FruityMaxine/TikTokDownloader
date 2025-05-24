@@ -123,7 +123,7 @@ class RecordManager:
             "TEXT",
         ),
         (
-            "origin_cover",
+            "static_cover",
             "静态封面",
             "TEXT",
         ),
@@ -613,11 +613,11 @@ class RecordManager:
     }
 
     def run(
-            self,
-            parameter: "Parameter",
-            folder="",
-            type_="detail",
-            blank=False,
+        self,
+        parameter: "Parameter",
+        folder="",
+        type_="detail",
+        blank=False,
     ):
         root = parameter.root.joinpath(parameter.CLEANER.filter_name(folder, "Data"))
         root.mkdir(exist_ok=True)
